@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Custom RTS Engine</title>
+    <style>
+        body { 
+            margin: 0; 
+            background: #111; 
+            color: white; 
+            font-family: sans-serif; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            height: 100vh; 
+            overflow: hidden; 
+        }
+        canvas { 
+            border: 2px solid #444; 
+            background: #1c2817; 
+            cursor: crosshair; 
+            box-shadow: 0 0 20px rgba(0,0,0,0.8); 
+        }
+        #ui { 
+            margin-top: 12px; 
+            font-size: 14px; 
+            color: #aaa; 
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h3>Custom Real-Time Strategy Engine</h3>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <div id="ui">
+        <strong>Controls:</strong> Left-click a unit (Blue Box) to select it. <br>
+        Right-click anywhere on the map to order it to move!
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
